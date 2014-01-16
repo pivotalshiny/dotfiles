@@ -1,0 +1,20 @@
+#! /bin/bash
+
+function clean {
+echo Removing current .vim and .vimrc
+rm -rf ~/.vim
+rm -rf ~/.vimrc
+}
+
+function install_pathogen {
+echo Install pathogen to manage vim addons
+mkdir -p ~/.vim/autoload ~/.vim/bundle;
+curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+}
+
+function run {
+clean
+install_pathogen
+}
+
+run

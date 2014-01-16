@@ -1,0 +1,17 @@
+[user]
+	name = zachgersh
+	email = zdgman@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+[github]
