@@ -5,13 +5,23 @@ rm -rf ~/.vimrc
 rm -rf ~/.vim
 }
 
+function install_vundler {
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+}
+
 function the_symlink {
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 }
 
+function run_the_trap {
+vim +BundleInstall +qall
+}
+
 function run {
 the_cleanup
+install_vundler
 the_symlink
+run_the_trap
 }
 
 run
