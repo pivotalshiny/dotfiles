@@ -1,0 +1,17 @@
+#! /bin/sh
+
+function the_cleanup {
+rm -rf ~/.vimrc
+rm -rf ~/.vim
+}
+
+function the_symlink {
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+}
+
+function run {
+the_cleanup
+the_symlink
+}
+
+run
