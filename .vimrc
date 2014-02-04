@@ -11,7 +11,8 @@ syntax on
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'flazz/vim-colorschemes'
+Bundle 'zachgersh/vim-colorschemes'
+Bundle 'wincent/Command-T'
 
 " Setting Spacing and Indent
 filetype plugin indent on
