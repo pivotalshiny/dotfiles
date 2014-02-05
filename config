@@ -11,6 +11,7 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 function the_symlink {
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.irbrc ~/.irbr
 }
 
 function run_the_trap {
