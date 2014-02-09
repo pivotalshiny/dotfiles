@@ -15,3 +15,5 @@
 	df = diff
 	lg = log -p
 [github]
+[push]
+	default = simple
