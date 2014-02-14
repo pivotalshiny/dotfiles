@@ -28,6 +28,9 @@ colorscheme twilight256
 " Remap the leader key
 :let mapleader = ','
 
+" Set 256 colors
+set t_Co=256
+
 " Rspec keyboard shortcuts
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
