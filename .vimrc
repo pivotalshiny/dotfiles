@@ -15,6 +15,7 @@ Bundle 'zachgersh/vim-colorschemes'
 Bundle 'kien/ctrlp.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-endwise'
+Bundle 'scrooloose/nerdcommenter'
 
 " Setting Spacing and Indent (plus line no)
 set nu
