@@ -5,7 +5,7 @@ rm -rf ~/.vimrc
 rm -rf ~/.vim
 }
 
-function install_vundler {
+function the_vaudeville_vundler {
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 }
 
@@ -23,7 +23,7 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 }
 
-function run_the_trap {
+function the_heist {
 vim +BundleInstall +qall
 }
 
@@ -34,10 +34,10 @@ brew install ctags-exuberant git rbenv ruby-build tmux macvim sqlite rbenv-gem-r
 
 function run {
 the_cleanup
-install_vundler
+the_vaudeville_vundler
 the_symlink
-run_the_trap
 the_brew
+the_heist
 }
 
 run
