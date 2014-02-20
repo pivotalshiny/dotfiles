@@ -24,13 +24,14 @@ filetype plugin indent on
 set ts=2
 
 " Colorscheme
-colorscheme twilight256
+colorscheme desert
 
 " Remap the leader key
 :let mapleader = ','
 
 " Set 256 colors
 set t_Co=256
+set guifont=Monaco:h16
 
 " Rspec keyboard shortcuts
 map <Leader>t :call RunCurrentSpecFile()<CR>
