@@ -34,6 +34,9 @@ colorscheme desert
 set t_Co=256
 set guifont=Monaco:h16
 
+" Auto addition / removal of Go packages
+let g:gofmt_command = "goimports"
+
 " Rspec keyboard shortcuts
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
