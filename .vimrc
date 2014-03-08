@@ -22,6 +22,7 @@ set nu
 set tabstop=2 shiftwidth=2 expandtab
 filetype plugin indent on
 set ts=2
+set nowrap
 
 " Colorscheme
 colorscheme desert
