@@ -4,6 +4,9 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Add in all the go vim stuffs
+set rtp+=$GOROOT/misc/vim
+
 " Syntax highlighting FTW
 syntax on
 
@@ -36,6 +39,9 @@ set guifont=Monaco:h16
 
 " Auto addition / removal of Go packages
 let g:gofmt_command = "goimports"
+
+" Run gofmt when saving a file
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " Rspec keyboard shortcuts
 map <Leader>t :call RunCurrentSpecFile()<CR>
